@@ -141,14 +141,14 @@ if uploaded_file is not None:
 
         st.divider()
 
-        st.markdown("### 📅 Aderência à Rotina de Manutenção")
+        st.markdown("### 📅 Rotina de Reparo")
 
         col_macro, col_micro = st.columns(2)
 
         # --- VISÃO MACRO ---
         with col_macro:
-            st.markdown("#### Visão Macro: Sazonalidade Histórica")
-            st.caption("Concentração de reparos cruzando Meses x Dias da Semana.")
+            st.markdown("#### Visão Macro")
+            st.caption("Reparos cruzando Meses x Dias da Semana.")
 
             anos_macro = sorted(df['Ano'].unique().tolist())
             ano_selecionado_macro = st.radio("Selecione o Ano para a Visão Macro:", options=anos_macro, horizontal=True)
